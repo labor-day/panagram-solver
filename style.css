@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+#loaderContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#loader {
+  animation: spin 0.4s linear infinite;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #1a936f;
+  height: 60px;
+  width: 60px;
+}
+
+#loaderText {
+  color:#12684E;
+  font-family: Poppins;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#pageWrapper {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  font-family: Poppins;
+  justify-content: center;
+}
+
+#header {
+  color: #1a936f;
+  display: flex;
+  flex-direction: row;
+  font-size: 52px;
+}
+
+#icon {
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+#title {
+  padding-left: 10px
+}
+
+#word {
+  display: flex;
+  flex-direction: row;
+  font-family: Poppins;
+  justify-content: space-between;
+  padding: 5px 20px 20px 20px;
+  width: 500px;
+}
+
+.letter {
+  border: 2px solid #1a936f50;
+  border-radius: 50%;
+  caret-color: #12684E;
+  color: #12684E;
+  font-family: Poppins;
+  font-size: 50px;
+  height: 60px;
+  line-height: 1.15;
+  padding: 0;
+  margin: 2px;
+  overflow: hidden;
+  resize: none;
+  text-align: center;
+  width: 60px;
+}
+
+.letter:focus {
+  border-color: #12684E;
+  outline: none;
+}
+
+.button {
+  background-color: #1a936f;
+  border: 2px solid #1a936f;
+  border-radius: 15px;
+  box-shadow: 0 6px #12684E;
+  box-sizing: border-box;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  width: 500px;
+}
+
+.button:active {
+  box-shadow: 0 0;
+  transform: translateY(4px);
+}
+
+#answers {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+p {
+  color:#12684E;
+  font-size: 30px;
+  margin: 10px;
+}
+
+@media all and (max-width: 504px) {
+
+  body {
+    padding: 12px;
+  }
+
+  #header {
+    font-size: 37px;
+    margin-bottom: 7px;
+  }
+  
+  #icon {
+    font-size: 32px;
+    padding-top: 6px;
+  }
+  
+  #word {
+    width: 100%;
+    /*margin: 0px 10px 0px 10px; */
+  }
+
+  .letter {
+    font-size: 25px;
+    height: 45px;
+    line-height: 1.8;
+    width: 45px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

@@ -22,8 +22,6 @@ export default function addListeners() {
     test(letters);
   });
 
-  //document.body.display = "flex";
-
 }
 
 function moveForward(position) {
@@ -38,5 +36,3 @@ function moveBack(position) {
     document.getElementById((position - 1).toString()).focus();
   }
 }
-
-
